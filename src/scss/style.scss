@@ -1,0 +1,46 @@
+@import '~bootstrap/scss/bootstrap';
+@import '~bootstrap-icons/font/bootstrap-icons.css';
+
+.topbar {
+
+  &__has-search {
+
+    .form-control {
+      padding-left: 2.375rem;
+    }
+
+    .form-control-feedback {
+      position: absolute;
+      z-index: 2;
+      display: block;
+      width: 2.375rem;
+      height: 2.375rem;
+      line-height: 2.375rem;
+      text-align: center;
+      pointer-events: none;
+      color: #aaa;
+    }
+  }
+}
+
+
+.countries--card {
+  .card-body:hover {
+    transition: all .3s cubic-bezier(0.23, 1, 0.32, 1);
+    transform: scale(1.1);
+    background: rgba(white, 0.8);
+    color: inherit !important;
+    cursor: pointer;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    opacity: 100%;
+    border: 1px solid #aaaaaa;
+    overflow-x: hidden !important;
+  }
+}
+
+button {
+  outline: none;
+  background-color: transparent;
+  border: none;
+}
